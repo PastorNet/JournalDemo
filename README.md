@@ -1,2 +1,2 @@
 # JournalDemo
-Training project to create a website
+Test web blog developed using HTML, CSS, JS, PHP
