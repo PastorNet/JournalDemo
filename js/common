@@ -1,0 +1,28 @@
+﻿$( document ).ready(function() {
+    jQuery('.item').hover(
+		function(){
+			$(this).find(".cover-item").fadeIn();
+		},
+		function(){
+			$(this).find(".cover-item").fadeOut();
+		}
+    );
+
+    var sizer = '.sizer4';
+
+    var container = $('.pageContent');
+
+    container.imagesLoaded(function(){
+    	container.masonry({
+    		itemSelector: '.item',
+    		columnWidth: sizer,
+    		itemResizeble:true,
+			percentPosition: true,
+			isAnimated: true,
+			animationOptions: {
+				queue: false,
+				duration: 500
+			}
+    	});
+    });
+});
